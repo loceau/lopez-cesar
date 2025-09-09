@@ -3,7 +3,7 @@ date = '2025-01-24T10:50:29-07:00'
 draft = false
 title = ''
 layout = 'landing_page'
-image = 'cal_2025.jpg'
+image = 'images/cal_2025.jpg'
 +++
 
 I'm a PhD candidate in the Emmett Interdisciplinary Program in Environment and Resources (E-IPER) at Stanford University.
