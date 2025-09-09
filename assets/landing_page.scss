@@ -1,0 +1,48 @@
+.landing-page-wrapper {
+    display: block; /* Use block layout to allow natural text flow */
+    padding-top: 1dvh; /* Space between the navigation bar and content */
+}
+
+main, header {
+    padding-top: 5em; /* Add space between nagivation bar and title*/
+}
+
+
+.landing-page-content {
+    display: block; /* Ensure content flows naturally */
+    width: 100%; /* Full width to allow text wrapping */
+    text-align: justify;
+}
+
+.landing-page-image {
+    float: right; /* Float the image to the right */
+    width: 30%; /* Adjust the image size */
+    margin: 1rem 0 1rem 2rem; /* Add space around the image (left and bottom) */
+}
+
+.landing-page-image img {
+    display: block; /* Proper block layout for the image */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-page-wrapper {
+        display: block; /* Reset layout for small screens */
+    }
+
+    .landing-page-content {
+        width: 100%; /* Full width for text */
+    }
+
+    .landing-page-image {
+        float: none; /* Disable float for mobile screens */
+        width: 100%; /* Full width for the image */
+        margin: 0 auto 1rem auto; /* Center the image */
+        text-align: center; /* Center the image container */
+    }
+
+    .landing-page-image img {
+        margin: 0 auto; /* Ensure the image itself is centered */
+    }
+}

@@ -1,0 +1,99 @@
+.icon-linkedin {
+    position: relative;
+    top: -0.115cm;
+}
+
+
+.large-bold-text {
+    font-size: 2em; /* Adjust the size as needed */
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* ***** ABSTRACT STYLES — START ***** */
+
+/* Container */
+.abs-disclosure {
+  margin: 1rem 0 1.25rem 0;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 8px;
+  background: var(--abs-bg, #fff);
+  padding: 0.25rem 0.75rem;
+}
+
+/* Summary (clickable header) */
+.abs-summary {
+  cursor: pointer;
+  user-select: none;
+  padding: .5rem 0;
+  list-style: none;                 /* hide default marker spacing */
+}
+.abs-summary::-webkit-details-marker { display: none; } /* hide WebKit marker */
+
+/* Header grid: 
+   col1 = arrow, col2 = title/meta; 
+   row1 = arrow+title; row2 = arrow+meta  */
+.abs-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: .4rem;
+  row-gap: .15rem;
+  align-items: baseline;
+}
+
+/* Arrow */
+.abs-arrow {
+  grid-column: 1;
+  grid-row: 1 / span 2;  /* span both rows */
+  align-self: start;
+}
+.abs-arrow::before {
+  content: "▶";
+  font-size: 0.85em;
+  display: inline-block;
+  transform: translateY(1px);
+}
+.abs-disclosure[open] .abs-arrow::before { content: "▼"; }
+
+/* Title on first row, second column */
+.abs-summary-title {
+  grid-column: 2;
+  grid-row: 1;
+  line-height: 1.25;
+  margin-right: .25rem;
+}
+
+/* Authors/status on second row, second column */
+.abs-summary-meta {
+  grid-column: 2;
+  grid-row: 2;
+  color: rgba(0,0,0,0.65);
+  font-size: .95em;
+}
+.abs-sep { opacity: .6; }
+
+/* Abstract body */
+.abs-blockquote {
+  margin: 0.25rem 0 0.75rem 1.5rem;
+  padding-left: .75rem;
+  border-left: 3px solid rgba(0,0,0,0.1);
+}
+
+
+
+/* Fade on open/close */
+.abs-disclosure .abs-blockquote { transition: opacity .15s ease-in-out; opacity: 0; }
+.abs-disclosure[open] .abs-blockquote { opacity: 1; }
+
+
+
+
+/* ***** ABSTRACT STYLES — END ***** */
+
+
+

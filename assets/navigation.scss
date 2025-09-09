@@ -1,0 +1,95 @@
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%; /* Full width of the viewport */
+    color: $text-color;
+    padding: 2em 0; /* Space inside the navigation bar */
+}
+
+nav ul {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    max-width: 735px; /* Content width */
+    margin: 0 auto; /* Center navigation bar */
+    padding: 0;
+    list-style: none;
+}
+
+
+nav .nav-left {
+    display: flex;
+    gap: 1rem; /* Space between left-aligned links */
+}
+
+nav .nav-right {
+    display: flex;
+    justify-content: flex-end; /* Align right links to the end */
+    gap: 1rem; /* Space between right-aligned links */
+}
+
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: $link-color;
+    font-weight: bold;
+    position: relative; /* Needed for the hover effect */
+}
+
+
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: $link-color; /* Navigation links colors */
+    transition: width 0.25s;
+    position: absolute;
+    bottom: -4px; /* Adjust hover underline position */
+    left: 0;
+}
+
+nav a:hover::after{
+    width: 100%; /* Full-width underline on hover */
+}
+
+
+
+nav li + li:before {
+    content: "";
+    padding: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        border-bottom: 1px solid invert($background-color);
+        padding: 0.1em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    nav .nav-left,
+    nav .nav-right {
+        display: block;
+        text-align: center; /* Center links on smaller screens */
+        gap: 0;
+    }
+
+    nav li + li:before {
+        content: "";
+        padding: 0;
+    }
+
+    nav li {
+        padding: 2px 0;
+        display: block;
+    }
+}

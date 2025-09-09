@@ -1,0 +1,97 @@
+baseURL = ''
+languageCode = 'en-us'
+title = 'Cesar (Augusto) Lopez'
+theme = 'barks'
+[params]
+  #subtitle = 'Ph.D. candidate in Environment & Resources at Stanford University' 
+
+
+# Head
+[params.head]
+    author = "Cesar (Augusto) Lopez"
+    custom_css = "css/custom.css"
+    description = "I'm Cesar. Current PhD in Environment and Resources at Stanford University"
+    keywords = ["development economics", "causal inference", "agricultural and natural resource economics", "social network analysis", "remote sensing", "artificial intelligence"]
+
+
+
+# Navigation panes
+[params.navigation]     # enable/disable navigation
+    show_navigation = true
+
+[params.footer]         # enable/disable footer
+    show_footer = true
+
+
+
+[params.typography]
+    title_font = "Bree Serif"
+    body_font = "Roboto"
+
+
+
+# Colors
+[params.colors]
+    theme_color = "#333333"
+    background_color = "#fbf9f0ff"
+    text_color = "#000000"
+
+
+
+[menu]
+
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 2
+    
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+    
+  [[menu.main]]
+    name = "CV"
+    url = "/files/CAL_CV.pdf"
+    weight = 4
+
+
+
+# Enabling the us of Inline HTML for Styling
+[markup.goldmark.renderer]
+    unsafe = true
+
+
+
+# Social Media stuff
+[params.social]
+    [params.social.email]
+        name = "E-Mail"
+        class = "fas fa-envelope"
+        url = "mailto:cesarlop@stanford.edu"
+        weight = 1
+    [params.social.github]
+        name = "GitHub"
+        class = "fab fa-github"
+        url = "https://github.com/lopez-cesar"
+        weight = 2
+    [params.social.google_scholar]
+        name = "Google Scholar"
+        class = "ai ai-google-scholar-square"
+        url = "https://scholar.google.com/citations?user=jsBI-LQAAAAJ"
+        weight = 3
+    [params.social.orcid]
+        name = "ORCID"
+        class = "ai ai-orcid"
+        url = "https://orcid.org/0000-0002-5166-868X"
+        weight = 4
+    [params.social.linked-in]
+        name = "LinkedIn"
+        class = "fa-brands fa-linkedin fa-2xl fab icon-linkedin"
+        url = "https://linkedin.com/in/lopez-ca"
+        weight = 5

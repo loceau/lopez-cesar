@@ -1,0 +1,25 @@
+
+{{ if not (eq .Site.Params.footer.show_footer false) }}
+<footer>
+
+    {{ if isset .Site.Params "social" }}
+    {{ with .Site.Params.social }}
+        <ul>
+        {{ range sort . "weight" }}
+            <li><a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener noreferrer">
+                <i class="{{ .class }}"></i></a></li>
+        {{ end }}
+        </ul> 
+    {{ end }}
+    {{ end }}
+
+    <!-- Copyright and Additional Info -->
+    <p>
+        {{ .Site.Copyright | safeHTML }}
+        &copy; {{ now.Format "2006" }} by Cesar (Augusto) Lopez &mdash;
+        Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> & <a href="https://github.com/timothygebhard/barks" target="_blank" rel="noopener noreferrer">barks</a> &mdash;
+        Last updated: {{ now.Format "January 2, 2006" }}
+    </p>
+
+</footer>
+{{ end }}

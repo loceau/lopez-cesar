@@ -1,0 +1,7 @@
+
+<header>
+    <a href="/" class="title">{{ .Site.Title | safeHTML }}</a>
+    {{ with .Site.Params.subtitle }}
+        <p class="subtitle">{{ . | safeHTML }}</p>
+    {{ end }}
+</header>

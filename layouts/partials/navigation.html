@@ -1,0 +1,17 @@
+
+{{ if not (eq .Site.Params.navigation.show_navigation false) }}
+<nav>
+    <ul>
+    {{ range .Site.Menus.main }}
+        <li>
+            <strong>
+                <a href="{{ .URL }}" 
+                   {{ if eq .Name "CV" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                   {{ .Name }}
+                </a>
+            </strong>
+        </li>
+    {{ end }}
+    </ul>
+</nav>
+{{ end }}

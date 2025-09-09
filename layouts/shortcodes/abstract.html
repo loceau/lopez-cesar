@@ -1,0 +1,28 @@
+{{/* 
+Shortcode: abstract
+Purpose: Collapsible abstract; arrow + title on line 1; authors/status on line 2 (only if provided).
+Note: We avoid whitespace-trimming hyphens in {{ ... }} to prevent eating spaces.
+*/}}
+
+{{ $title   := .Get "title"   | default .Page.Title }}
+{{ $authors := .Get "authors" | default .Page.Params.authors }}
+{{ $status  := .Get "status"  | default .Page.Params.status }}
+
+<details class="abs-disclosure" aria-label="Abstract" role="group">
+  <summary class="abs-summary">
+    <span class="abs-arrow" aria-hidden="true"></span>
+    {{ with $title }}<strong class="abs-title">{{ . }}</strong>{{ end }}
+    {{ if or $authors $status }}
+      <br>
+      <span class="abs-summary-meta">
+        {{ with $authors }}<span class="abs-authors">{{ . }}</span>{{ end }}
+        {{ if and $authors $status }}<span class="abs-sep"> </span>{{ end }}
+        {{ with $status }}<em class="abs-status">{{ . }}</em>{{ end }}
+      </span>
+    {{ end }}
+  </summary>
+
+  <blockquote class="abs-blockquote">
+    {{ .Inner | markdownify }}
+  </blockquote>
+</details>
