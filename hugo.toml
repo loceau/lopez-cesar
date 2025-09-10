@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://lopez-cesar.com/'
 languageCode = 'en-us'
 title = 'Cesar (Augusto) Lopez'
 theme = 'barks'
@@ -10,7 +10,7 @@ theme = 'barks'
 [params.head]
     author = "Cesar (Augusto) Lopez"
     custom_css = "css/custom.css"
-    description = "I'm Cesar. Current PhD in Environment and Resources at Stanford University"
+    description = "I'm Cesar. PhD student at Stanford University"
     keywords = ["development economics", "causal inference", "agricultural and natural resource economics", "social network analysis", "remote sensing", "artificial intelligence"]
 
 
@@ -63,8 +63,13 @@ theme = 'barks'
 
 
 # Enabling the us of Inline HTML for Styling
-[markup.goldmark.renderer]
+[markup]
+  [markup.goldmark.renderer]
     unsafe = true
+
+  [markup.goldmark.parser.attribute]
+    block = true
+    title = true
 
 
 
