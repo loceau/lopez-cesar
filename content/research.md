@@ -74,5 +74,3 @@ Here is a list of my current research. You can find the full record on my <a hre
 <span style="font-size: 1.2em; font-weight: bold; text-decoration: underline;">Peer-reviewed publications</span>
 
 Turner, M. A., Signleton, A. L., Harris, M. J., **Lopez, C. A.**, Harryman, I., Arthur, R. F., ... & Jones, J. H. (2023). <a href="https://doi.org/10.1098/rstb.2022.0401" target="_blank">Minority-group incubators and majority-group reservoirs for promoting the diffusion of climate change and public health adaptations</a>. *Philosophical Transactions of the Royal Society B*, 378(1889), 20220401.
-
-

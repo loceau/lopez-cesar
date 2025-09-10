@@ -83,7 +83,7 @@ theme = 'barks'
     [params.social.github]
         name = "GitHub"
         class = "fab fa-github"
-        url = "https://github.com/lopez-cesar"
+        url = "https://github.com/loceau"
         weight = 2
     [params.social.google_scholar]
         name = "Google Scholar"
