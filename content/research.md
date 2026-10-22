@@ -6,7 +6,7 @@ draft = false
 <h1> Research </h1>
 
 Here is a list of my current research. You can find the full record on my <a href="https://scholar.google.com/citations?user=jsBI-LQAAAAJ"
-   target="_blank">Google Scholar profile</a>.
+   target="_blank">Google Scholar</a> profile.
 
 
 <span style="font-size: 1.4em; font-weight: bold; text-decoration: underline; display: block; margin: 0;">Doctoral dissertation research</span>
