@@ -1,17 +1,17 @@
 baseURL = 'https://lopez-cesar.com/'
 languageCode = 'en-us'
-title = 'Cesar (Augusto) Lopez'
+title = 'Cesar Augusto Lopez'
 theme = 'barks'
 [params]
-  #subtitle = 'Ph.D. candidate in Environment & Resources at Stanford University' 
+  #subtitle = 'Research scientist' 
 
 
 # Head
 [params.head]
-    author = "Cesar (Augusto) Lopez"
+    author = "Cesar Augusto Lopez"
     custom_css = "css/custom.css"
-    description = "I'm Cesar. PhD student at Stanford University"
-    keywords = ["development economics", "causal inference", "agricultural and natural resource economics", "social network analysis", "remote sensing", "artificial intelligence"]
+    description = "I'm Cesar, an interdisciplinary research scientist."
+    keywords = ["development economics", "causal inference", "agricultural and natural resource economics", "finance", "policy", "remote sensing", "artificial intelligence"]
 
 
 
@@ -97,6 +97,6 @@ theme = 'barks'
         weight = 4
     [params.social.linked-in]
         name = "LinkedIn"
-        class = "fa-brands fa-linkedin fa-2xl fab icon-linkedin"
+        class = "fab fa-linkedin"
         url = "https://linkedin.com/in/lopez-ca"
         weight = 5
